@@ -28,7 +28,7 @@ export default function Home() {
       <div className="w-screen h-screen m-0 bg-slate-600">
         <div className="h-full p-0 m-0 flex items-center justify-center">
           <div className={clsx(shantellSans.className, "flex flex-col h-60 justify-between text-center")} >
-            <div className='text-5xl text-slate-400'>
+            <div className='text-3xl lg:text-5xl text-slate-400'>
               It&apos;s
               {' '}
               <span className="text-slate-100">5:{minutes} PM</span>
@@ -38,11 +38,11 @@ export default function Home() {
             <Link
               href={location.link ?? makeLink(location.name)}
               target="_blank"
-              className="font-bold text-8xl text-slate-100 hover:text-slate-300"
+              className="font-bold text-5xl lg:text-8xl text-slate-100 hover:text-slate-300"
             >
               {location.name}
             </Link>
-            <div className='text-5xl text-slate-400'>
+            <div className='text-3xl lg:text-5xl text-slate-400'>
               <Cheers message={location.phrase} />
             </div>
           </div>
@@ -52,10 +52,7 @@ export default function Home() {
           >
             It&apos;s Five O&apos;Clock Somewhere...
           </Link>
-          <Link href="https://en.wiktionary.org/wiki/it%27s_five_o%27clock_somewhere" target="_blank" className='absolute right-2 bottom-1 text-center text-slate-400 underline hover:text-red-500'>
-            what to heck ????
-          </Link>
-          <Link href="https://github.com/benshanahan1" target="_blank" className='absolute bottom-1 text-center text-slate-400 underline hover:text-red-500'>
+          <Link href="https://github.com/benshanahan1" target="_blank" className='absolute bottom-1 text-center text-slate-400 hover:text-red-500'>
             Made with ❤️
             {' '}
             {new Date().getFullYear().toString()}

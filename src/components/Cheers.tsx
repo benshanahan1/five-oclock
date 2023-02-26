@@ -20,7 +20,7 @@ export default function Cheers(props: IProps) {
     return (
         <div>
             {props.message}
-            <span className="text-6xl">{getRandomEmojiString()}</span>
+            <span className="text-4xl lg:text-6xl">{getRandomEmojiString()}</span>
         </div>
     );
 }
