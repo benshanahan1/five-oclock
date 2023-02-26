@@ -76,7 +76,7 @@ const languagePhraseMapping = {
   [Language.Moldovan]: ["Noroc"],
   [Language.Polish]: ["Na zdrowie"],
   [Language.Portugese]: ["Saúde"],
-  [Language.Russian]: ["Будем здоровы", "На здоровье"],
+  [Language.Russian]: ["Будем здоровы", "Ha здоровье"],
   [Language.Samoan]: ["Manuia"],
   [Language.Shqip]: ["Gëzuar", "Brohoritje", "Per shendetin tend"],
   [Language.Spanish]: ["Salud"],
@@ -446,7 +446,7 @@ export default function getLocationAndPhrase(): ILocationPhrase {
   // On the off-chance that we cannot find a timezone where it's 5pm, return something.
   if (offsets.length === 0) {
     return {
-      name: "???",
+      name: "Whoops 😅",
       phrase: pickRandom(languagePhraseMapping[Language.Unknown]),
     };
   }

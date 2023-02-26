@@ -5,10 +5,10 @@ import clsx from 'clsx';
 import Cheers from '@/components/Cheers';
 import getLocationAndPhrase from '@/utils/locations';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const shantellSans = Shantell_Sans({ subsets: ['latin'] })
 
+/** If a custom link is not provided, generate a google search so users can learn more about the location. */
 function makeLink(name: string) {
   const search = name.replaceAll(" ", "+").toLowerCase();
   return `https://www.google.com/search?q=${search}`;
