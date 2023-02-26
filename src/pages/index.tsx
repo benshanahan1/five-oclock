@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-screen h-screen m-0">
+      <div className="w-screen h-96 lg:h-screen m-0">
         <div className="h-full p-0 m-0 flex items-center justify-center">
           <div className={clsx(shantellSans.className, "flex flex-col h-36 lg:h-60 justify-between text-center")} >
             <div className='text-3xl lg:text-5xl text-slate-400'>
@@ -38,7 +38,7 @@ export default function Home() {
             <Link
               href={location.link ?? makeLink(location.name)}
               target="_blank"
-              className="font-bold text-5xl lg:text-8xl text-slate-100 hover:text-slate-300"
+              className="p-2 font-bold text-transparent text-5xl lg:text-8xl hover:text-slate-300 bg-clip-text bg-gradient-to-b from-slate-100 to-slate-400"
             >
               {location.name}
             </Link>

@@ -27,6 +27,9 @@ enum Language {
   Vietnamese,
 }
 
+/** Some references:
+ *    - https://www.todaytranslations.com/news/20-ways-to-say-cheers/
+ */
 const languagePhraseMapping = {
   [Language.Unknown]: ["Cheers!"],
   [Language.English]: ["Cheers!", "To health!", "Let's drink!"],
