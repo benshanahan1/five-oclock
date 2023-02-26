@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import Cheers from '@/components/Cheers';
 import getLocationAndPhrase from '@/utils/locations';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const shantellSans = Shantell_Sans({ subsets: ['latin'] })
 
@@ -38,7 +39,7 @@ export default function Home() {
             <Link
               href={location.link ?? makeLink(location.name)}
               target="_blank"
-              className="p-2 font-bold text-transparent text-5xl lg:text-8xl hover:text-slate-300 bg-clip-text bg-gradient-to-b from-slate-100 to-slate-400"
+              className="p-2 font-bold text-transparent text-5xl lg:text-8xl hover:text-slate-300 bg-clip-text bg-gradient-to-b from-slate-50 to-slate-400"
             >
               {location.name}
             </Link>
