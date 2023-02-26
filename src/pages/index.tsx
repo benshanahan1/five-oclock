@@ -25,9 +25,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-screen h-screen m-0 bg-slate-600">
+      <div className="w-screen h-screen m-0">
         <div className="h-full p-0 m-0 flex items-center justify-center">
-          <div className={clsx(shantellSans.className, "flex flex-col h-60 justify-between text-center")} >
+          <div className={clsx(shantellSans.className, "flex flex-col h-36 lg:h-60 justify-between text-center")} >
             <div className='text-3xl lg:text-5xl text-slate-400'>
               It&apos;s
               {' '}
@@ -48,11 +48,11 @@ export default function Home() {
           </div>
           <Link
             href="#"
-            className={clsx(shantellSans.className, "absolute top-2 left-2 text-slate-300 animate-pulse hover:text-slate-100 hover:animate-none")}
+            className={clsx(shantellSans.className, "fixed top-2 text-lg lg:text-xl text-center text-slate-300 animate-pulse hover:text-slate-100 hover:animate-none")}
           >
             It&apos;s Five O&apos;Clock Somewhere...
           </Link>
-          <Link href="https://github.com/benshanahan1" target="_blank" className='absolute bottom-1 text-center text-slate-400 hover:text-red-500'>
+          <Link href="https://github.com/benshanahan1/five-oclock" target="_blank" className='fixed bottom-1 text-center text-slate-400 hover:text-red-500'>
             Made with ❤️
             {' '}
             {new Date().getFullYear().toString()}
