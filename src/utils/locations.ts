@@ -1,5 +1,4 @@
 import { pickRandom } from "./arrays";
-import moment from "moment";
 
 interface ITimezoneOffset {
   locations: ILocation[];
@@ -220,7 +219,6 @@ const offsetsAndLocations: ITimezoneOffset[] = [
 
 export default function getLocationAndPhrase(): ILocationPhrase {
   const utcHours = new Date().getUTCHours();
-  console.log(moment(new Date()).isDST());
   const offsets = offsetsAndLocations.filter(
     (o) => utcHours + o.offsetHours === 17 || utcHours + o.offsetHours === -7
   );
